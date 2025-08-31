@@ -1,6 +1,6 @@
 #!/bin/bash
 # 正样本不去冗余，负样本去冗余50%(8:1:1随机划分)
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=0,1,2,3
 # random seed
 seed=1211
 
@@ -68,7 +68,7 @@ warmup_steps=8000
 ## -1自动计算
 max_steps=-1
 ## batch size for one GPU
-batch_size=8
+batch_size=2
 ## 最大学习速率(peak learning rate)
 learning_rate=2e-4
 ## data loading buffer size
