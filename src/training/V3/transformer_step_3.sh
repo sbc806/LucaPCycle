@@ -72,7 +72,7 @@ learning_rate=2e-4
 ## data loading buffer size
 buffer_size=4096
 ## tokenizer dir
-tokenizer_dir="step_3"
+tokenizer_dir=step_3
 ## positive weight
 weight=13,212,7,8,21,31,3,10,4,27,28,3,363,589,6,2,20,1,4,37,32,179,17,30,14,110,1.2,4,12,11,64
 weight=1
