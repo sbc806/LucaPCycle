@@ -38,7 +38,7 @@ try:
     from tester import test
     from lucaprot.models.lucaprot import LucaProt
     from common.model_config import LucaConfig
-    from encoder import Encoder
+    # from encoder import Encoder
     from batch_converter import BatchConverter
 except ImportError:
     from src.common.alphabet import Alphabet
@@ -181,7 +181,7 @@ def get_args():
     parser.add_argument("--fp16", action="store_true", help="Whether to use 16-bit (mixed) precision (through NVIDIA apex) instead of 32-bit")
     parser.add_argument("--fp16_opt_level", type=str, default="O1", help="For fp16: Apex AMP optimization level selected in ['O0', 'O1', 'O2', and 'O3']." "See details at https://nvidia.github.io/apex/amp.html")
     parser.add_argument("--local_rank", type=int, default=-1, help="For distributed training: local_rank")
-
+    
     # multi-label/binary-class
     parser.add_argument("--sigmoid", action="store_true", help="Classifier add sigmoid if task_type is binary-class or multi-label")
 
@@ -333,7 +333,7 @@ def check_args(args):
     if not hasattr(args, "time_str") or args.time_str is None:
         now = datetime.now()
         args.time_str = now.strftime('%Y%m%d%H%M%S')
-
+    
         # for pytorch 1.9+
     if "LOCAL_RANK" in os.environ:
         local_rank = int(os.environ["LOCAL_RANK"])
@@ -641,6 +641,24 @@ def create_device(args):
     return device
 
 
+def parse_single_seq(seq_id,
+              seq_type,
+              seq,
+              vector_filename=None,
+              matrix=None,
+              label=None):
+    seq_type = seq_type.strip().lower()
+    seq = seq.strip().upper()
+    return {
+            "seq_id": seq_id,
+            "seq": seq,
+            "seq_type": seq_type,
+            "vector": None,
+            "matrix": None,
+            "label": label
+    }
+
+
 def main():
     # get args
     args = get_args()
@@ -705,13 +723,16 @@ def main():
 
     # file row parser
     # 文件记录解析函数
-    encoder = Encoder(**encoder_config)
+    # encoder = Encoder(**encoder_config)
     # pair对数据集
-    if args.input_mode in ["pair"]:
-        parse_row_func = encoder.encode_pair
-    else:
+    # if args.input_mode in ["pair"]:
+        # parse_row_func = encoder.encode_pair
+    # elif args.input_mode not in ["pair"] and args.input_type == "seq":
+        # parse_row_func = encoder.encode_single_seq
+    # else:
         # 基因或者蛋白单记录数据集
-        parse_row_func = encoder.encode_single
+        # parse_row_func = encoder.encode_single
+    parse_row_func = parse_single_seq
 
     # encoding
     # batch转换器
@@ -925,6 +946,7 @@ def main():
         log_fp.write(json.dumps(result, ensure_ascii=False) + "\n")
     if args.local_rank in [-1, 0] and log_fp:
         log_fp.close()
+
 
 
 if __name__ == "__main__":
