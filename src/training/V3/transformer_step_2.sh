@@ -74,7 +74,7 @@ learning_rate=2e-4
 ## data loading buffer size
 buffer_size=10240
 ## tokenizer dir
-tokenizer_dir="step_2"
+tokenizer_dir=step_2
 ## positive weight
 pos_weight=4.0
 
