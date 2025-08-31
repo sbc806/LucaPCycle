@@ -12,3 +12,9 @@
 *.DS_Store
 *.log
 *.tmp
+kinases_dataset/
+kinases_dataset_1/
+20250830_kinases_dataset_content.txt
+20250830_kinases_dataset_1_content.txt
+subword/
+vocab/
