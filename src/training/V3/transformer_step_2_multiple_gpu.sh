@@ -1,6 +1,6 @@
 #!/bin/bash
 # 正样本不去冗余，负样本去冗余50%(8:1:1随机划分)
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=0,1,2,3
 # random seed
 seed=1211
 
