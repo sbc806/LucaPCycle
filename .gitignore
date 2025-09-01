@@ -13,3 +13,8 @@ kinases_dataset_1/
 20250830_kinases_dataset_1_content.txt
 subword/
 vocab/
+logs/
+models/
+src/code_copies/
+src/matrix_embedding_not_exists.txt
+tb-logs/
