@@ -140,7 +140,7 @@ python run_esm_only.py \
   --dropout_prob $dropout_prob \
   --classifier_size $classifier_size \
   --vector_dirpath /scratch/schen123/esm_step_1_train_dev/vector/ \
-  --matrix_dirpath /scratch/schen123/esm_step_1_train_dev/matrix/ \
+  --matrix_dirpath $SLURM_TMPDIR/step_1/matrix/#/scratch/schen123/esm_step_1_train_dev/matrix/ \
   --seq_fc_size $fc_size \
   --seq_fc_size $fc_size \
   --matrix_fc_size $fc_size \
