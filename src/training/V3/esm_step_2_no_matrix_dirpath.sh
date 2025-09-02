@@ -139,9 +139,6 @@ python run_esm_only.py \
   --num_hidden_layers $num_hidden_layers \
   --dropout_prob $dropout_prob \
   --classifier_size $classifier_size \
-  --vector_dirpath /scratch/schen123/esm_step_1_train_dev/vector/ \
-  --matrix_dirpath $SLURM_TMPDIR/step_2/matrix/#/scratch/schen123/esm_step_1_train_dev/matrix/ \
-  --seq_fc_size $fc_size \
   --seq_fc_size $fc_size \
   --matrix_fc_size $fc_size \
   --vector_fc_size $fc_size \
@@ -150,7 +147,7 @@ python run_esm_only.py \
   --classifier_activate_func gelu \
   --warmup_steps $warmup_steps \
   --beta1 0.9 \
-  --beta2 0.98 \
+  --beta2 0.99 \
   --weight_decay 0.01 \
   --save_steps $save_steps \
   --max_steps $max_steps \
