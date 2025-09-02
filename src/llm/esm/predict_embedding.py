@@ -405,17 +405,17 @@ def predict_embedding(sample,
                 weights_only=False
             )
 
-        model_name = "esm2_t36_3B_UR50D"
-        url = f"https://dl.fbaipublicfiles.com/fair-esm/regression/{model_name}-contact-regression.pt"
-        fn = Path(url.name)
-        regression_data = torch.load(
+            model_name = "esm2_t36_3B_UR50D"
+            url = f"https://dl.fbaipublicfiles.com/fair-esm/regression/{model_name}-contact-regression.pt"
+            fn = Path(url.name)
+            regression_data = torch.load(
             f"{torch.hub.get_dir()}/checkpoints/{fn}",
             map_location="cpu",
             weights_only=False
         )
 
-        model_name = "esm2_t36_3B_UR50D"
-        global_model, global_alphabet = pretrained.load_model_and_alphabet_core(model_name, model_data, regression_data)
+            model_name = "esm2_t36_3B_UR50D"
+            global_model, global_alphabet = pretrained.load_model_and_alphabet_core(model_name, model_data, regression_data)
         elif version == "650M":
             llm_name = "esm2_t33_650M_UR50D"
             global_layer_size = 33
