@@ -127,7 +127,6 @@ python run_seq_only.py \
   --embedding_input_size $embedding_input_size \
   --matrix_max_length=$matrix_max_length \
   --trunc_type=$TRUNC_TYPE \
-  --pos_weight $pos_weight \
   --save_all \
   --llm_version $llm_version \
   --llm_type $llm_type \
