@@ -713,7 +713,7 @@ def main():
         parse_row_func = encoder.encode_single
     
     # encoding
-    dataset_path = "../kinases_dataset/equal_data_splits/dataset_0.csv"
+    dataset_path = "/home/schen123/projects/def-guanuofa/schen123/kinases_dataset/equal_data_splits/dataset_0.csv"
     
     dataset_df = pd.read_csv(dataset_path)
     
