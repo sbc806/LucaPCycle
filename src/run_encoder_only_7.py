@@ -713,7 +713,7 @@ def main():
         parse_row_func = encoder.encode_single
     
     # encoding
-    train_dataset_path = "/home/schen123/projects/def-guanuofa/schen123/kinases/kinases_dataset/extra_p_2_class_v3/protein/binary_class/train/train.csv"
+    train_dataset_path = "/home/schen123/projects/def-guanuofa/schen123/kinases/kinases_dataset/equal_data_splits/dataset_7.csv"
     dev_dataset_path = "../kinases_dataset/extra_p_2_class_v3_kinases_only/protein/binary_class/dev/dev.csv"
 
     train_df = pd.read_csv(train_dataset_path)
