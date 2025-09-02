@@ -407,7 +407,7 @@ def predict_embedding(sample,
 
             model_name = "esm2_t36_3B_UR50D"
             url = f"https://dl.fbaipublicfiles.com/fair-esm/regression/{model_name}-contact-regression.pt"
-            fn = Path(url.name)
+            fn = Path(url).name
             regression_data = torch.load(
             f"{torch.hub.get_dir()}/checkpoints/{fn}",
             map_location="cpu",
