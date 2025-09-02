@@ -390,7 +390,7 @@ def create_logger(args):
     '''
     if args.local_rank in [-1, 0]:
         print("args.local_rank: %d" % args.local_rank)
-        create the output dir
+        # create the output dir
         if os.path.exists(args.output_dir):
             raise ValueError("Output directory ({}) already exists and is not empty.".format(args.output_dir))
         else:
