@@ -328,6 +328,7 @@ class Encoder(object):
         print("-" * 50)
 
     def __get_embedding__(self, seq_id, seq_type, seq, embedding_type):
+        embedding_saved = False
         seq_type = seq_type.strip().lower()
         if "prot" not in seq_type and "gene" not in seq_type:
             raise Exception("Not support this seq_type=%s" % seq_type)
@@ -340,6 +341,7 @@ class Encoder(object):
                     emb_filepath = os.path.join(dirpath, emb_filename)
                     if os.path.exists(emb_filepath):
                         embedding_info = torch.load(emb_filepath)
+                        embedding_saved = True
                         return embedding_info
             except Exception as e:
                 print(e)
@@ -361,7 +363,7 @@ class Encoder(object):
 
         if embedding_info is None:
             if self.matrix_embedding_exists:
-                with open("matrix_embedding_not_exists.txt", "a+") as wfp:
+                with open("matrix_embedding_not_exists_1.txt", "a+") as wfp:
                     print("seq_id: %s" % seq_id)
                     wfp.write("seq_id: %s\n" % seq_id)
                     wfp.flush()
@@ -417,7 +419,7 @@ class Encoder(object):
             else:
                 raise Exception("Not support the llm_type=%s" % self.llm_type)
         if embedding_type in ["bos", "vector"] and self.vector_dirpath is not None \
-                or embedding_type not in ["bos", "vector"] and self.matrix_dirpath is not None:
+                or embedding_type not in ["bos", "vector"] and self.matrix_dirpath is not None and not embedding_saved:
             emb_filename = calc_emb_filename_by_seq_id(seq_id, embedding_type)
             dirpath_list = self.vector_dirpath if embedding_type in ["bos", "vector"] else self.matrix_dirpath
             dirpath = dirpath_list[0]
