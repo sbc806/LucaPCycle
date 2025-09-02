@@ -140,7 +140,6 @@ python run_esm_only.py \
   --dropout_prob $dropout_prob \
   --classifier_size $classifier_size \
   --seq_fc_size $fc_size \
-  --seq_fc_size $fc_size \
   --matrix_fc_size $fc_size \
   --vector_fc_size $fc_size \
   --emb_activate_func gelu \
