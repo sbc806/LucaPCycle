@@ -19,3 +19,4 @@ src/code_copies/
 src/matrix_embedding_not_exists.txt
 tb-logs/
 src/training/V3/code_copies/
+src/llm/esm/code_copies/
