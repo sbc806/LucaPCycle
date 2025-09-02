@@ -713,13 +713,13 @@ def main():
         parse_row_func = encoder.encode_single
     
     # encoding
-    train_dataset_path = "../kinases_dataset/extra_p_2_class_v3/protein/binary_class/train/train.csv"
+    train_dataset_path = "../kinases_dataset/equal_data_splits/dataset_1.csv"
     dev_dataset_path = "../kinases_dataset/extra_p_2_class_v3_kinases_only/protein/binary_class/dev/dev.csv"
 
     train_df = pd.read_csv(train_dataset_path)
     dev_df = pd.read_csv(dev_dataset_path)
 
-    dfs = [train_df, dev_df]
+    dfs = [train_df]
     for df in dfs:
         for i in range(0, len(df)):
             row = df.iloc[i]
