@@ -719,7 +719,7 @@ def main():
     train_df = pd.read_csv(train_dataset_path)
     # dev_df = pd.read_csv(dev_dataset_path)
 
-    dfs = [train_df, dev_df]
+    dfs = [train_df]
     for df in dfs:
         for i in range(0, len(df)):
             row = df.iloc[i]
