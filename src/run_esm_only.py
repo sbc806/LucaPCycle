@@ -411,6 +411,7 @@ def create_logger(args):
             for dir_path in dir_path_list:
                 if not os.path.exists(dir_path):
                     os.makedirs(dir_path)
+            print("dir_path_list:", dir_path_list)
     else:
         log_fp = None
     return log_fp
