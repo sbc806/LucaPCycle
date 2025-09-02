@@ -340,7 +340,7 @@ class Encoder(object):
                 for dirpath in dirpath_list:
                     emb_filepath = os.path.join(dirpath, emb_filename)
                     if os.path.exists(emb_filepath):
-                        embedding_info = torch.load(emb_filepath)
+                        embedding_info = torch.load(emb_filepath, weights_only=False)
                         embedding_saved = True
                         return embedding_info
             except Exception as e:
