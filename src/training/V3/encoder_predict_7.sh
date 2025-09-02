@@ -82,7 +82,7 @@ pos_weight=4.0
 time_str=$(date "+%Y%m%d%H%M%S")
 
 cd ../..
-python run_encoder_only.py \
+python run_encoder_only_7.py \
   --train_data_dir ../kinases_dataset/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/train/ \
   --dev_data_dir ../kinases_dataset/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/dev/ \
   --test_data_dir ../kinases_dataset/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/test/ \
