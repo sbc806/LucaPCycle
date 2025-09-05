@@ -25,7 +25,7 @@ CONFIG_NAME="lucaprot_config.json"
 FUSION_TYPE="concat"
 dropout_prob=0.1
 fc_size=256
-classifier_size=$fc_size
+classifier_size=$((fc_size + fc_size))
 BEST_METRIC_TYPE="f1"
 loss_type="cce"
 
