@@ -26,7 +26,7 @@ CONFIG_NAME="lucaprot_config.json"
 FUSION_TYPE="concat"
 dropout_prob=0.1
 fc_size=256
-classifier_size=$fc_size
+classifier_size=$((fc_size + fc_size))
 BEST_METRIC_TYPE="f1"
 loss_type="bce"
 
@@ -57,7 +57,7 @@ llm_step="3B"
 ## max epochs
 num_train_epochs=50
 ## accumulation gradient steps
-gradient_accumulation_steps=8
+gradient_accumulation_steps=2
 # 间隔多少个step在log文件中写入信息（实际上是gradient_accumulation_steps与logging_steps的最小公倍数, 这里是4000）
 logging_steps=4000
 ## checkpoint的间隔step数。-1表示按照epoch粒度保存checkpoint
