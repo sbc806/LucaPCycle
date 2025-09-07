@@ -40,8 +40,8 @@ num_hidden_layers=4
 ### pooling type: none, max, mean, value_attention
 SEQ_POOLING_TYPE="value_attention"
 # word-level
-codes_file="extra_p_50_codes_20000.txt"
-seq_subword="extra_p_50_subword_vocab_20000.txt"
+codes_file="step_1_all_sequences_corpus_codes_30000.txt"
+seq_subword="step_1_all_sequences_corpus_subword_vocab_20000.txt"
 
 ## for embedding channel
 embedding_input_size=2560
@@ -74,7 +74,7 @@ learning_rate=2e-4
 ## data loading buffer size
 buffer_size=10240
 ## tokenizer dir
-tokenizer_dir=extra_p
+tokenizer_dir=step_1
 ## positive weight
 pos_weight=4.0
 
