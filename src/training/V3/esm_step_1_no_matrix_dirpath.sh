@@ -41,7 +41,7 @@ num_hidden_layers=4
 SEQ_POOLING_TYPE="value_attention"
 # word-level
 codes_file="step_1_all_sequences_corpus_codes_30000.txt"
-seq_subword="step_1_all_sequences_corpus_subword_vocab_20000.txt"
+seq_subword="step_1_all_sequences_corpus_subword_vocab_30000.txt"
 
 ## for embedding channel
 embedding_input_size=2560
