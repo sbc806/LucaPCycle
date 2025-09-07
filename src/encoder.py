@@ -361,10 +361,10 @@ class Encoder(object):
                 print(e)
                 embedding_info = None
 
-        if embedding_info is None:
-            if self.matrix_embedding_exists:
+        # if embedding_info is None:
+            # if self.matrix_embedding_exists:
                 # with open("matrix_embedding_not_exists.txt", "a+") as wfp:
-                print("seq_id: %s" % seq_id)
+                # print("seq_id: %s" % seq_id)
                     # wfp.write("seq_id: %s\n" % seq_id)
                     # wfp.flush()
         if embedding_info is None:
