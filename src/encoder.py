@@ -419,7 +419,7 @@ class Encoder(object):
             else:
                 raise Exception("Not support the llm_type=%s" % self.llm_type)
         if embedding_type in ["bos", "vector"] and self.vector_dirpath is not None \
-                or embedding_type not in ["bos", "vector"] and self.matrix_dirpath is not None and not embedding_saved:
+                or embedding_type not in ["bos", "vector"] and self.matrix_dirpath is not None:
             emb_filename = calc_emb_filename_by_seq_id(seq_id, embedding_type)
             dirpath_list = self.vector_dirpath if embedding_type in ["bos", "vector"] else self.matrix_dirpath
             dirpath = dirpath_list[0]
