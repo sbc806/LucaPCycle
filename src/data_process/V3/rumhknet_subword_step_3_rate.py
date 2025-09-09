@@ -181,7 +181,7 @@ def generate_corpus(save_filepath, rate=0.2):
         if n_rate_percent > len(label_sequences[label]):
             n_rate_percent = len(label_sequences[label])
         corpus.extend(label_sequences[label][0: n_rate_percent])
-        print(f"Number of total sequences for {label}:", len(label_sequences[label]), f"Number of sequences for {label} in corpus:", len(label_sequences[label][0: n_rate_percent])
+        print(f"Number of total sequences for {label}:", len(label_sequences[label]), f"Number of sequences for {label} in corpus:", len(label_sequences[label][0: n_rate_percent]))
     
     print("corpus: %d" % len(corpus))
     with open(save_filepath, 'w') as wfp:
