@@ -144,7 +144,7 @@ def generate_corpus_1(save_filepath, rate=0.2):
         for item in corpus:
             wfp.write(item[2] + "\n")
 
-def generate_corpus(save_filepath, rate=0.5):
+def generate_corpus(save_filepath, rate=0.2):
     dir_path = "/home/schen123/projects/def-guanuofa/schen123/kinases/sbc806/LucaPCycle/kinases_dataset/extra_p_2_class_v3_kinases_only/protein/binary_class"
     train_filepath = os.path.join(dir_path, "train/train.csv")
     dev_filepath = os.path.join(dir_path, "dev/dev.csv")
@@ -175,7 +175,7 @@ def generate_corpus(save_filepath, rate=0.5):
         
     # for label in label_sequences:
         # print(f"Number of total sequences for {label}:", len(label_sequences[label]), f"Number of sequences for {label} in corpus:", len(label_sequences[label]))
-
+    rate = 0.5
     for label in label_sequences:
         n_rate_percent = int(len(label_sequences[label]) * rate) + 1
         if n_rate_percent > len(label_sequences[label]):
