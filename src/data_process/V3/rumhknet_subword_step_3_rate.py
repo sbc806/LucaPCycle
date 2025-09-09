@@ -64,7 +64,7 @@ def get_args():
     return args
 
 
-def generate_corpus_1(save_filepath, rate=0.2):
+def generate_corpus_1(save_filepath, rate=0.5):
     '''
     fasta to sequence corpus
     :param save_filepath
