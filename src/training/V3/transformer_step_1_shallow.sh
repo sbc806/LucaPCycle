@@ -76,7 +76,7 @@ buffer_size=10240
 ## tokenizer dir
 tokenizer_dir="step_1"
 ## positive weight
-pos_weight=None
+pos_weight=0.4
 
 # model building time
 time_str=$(date "+%Y%m%d%H%M%S")
