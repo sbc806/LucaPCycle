@@ -32,7 +32,7 @@ loss_type="bce"
 
 
 ## for sequence channel
-SEQ_MAX_LENGTH=3072
+SEQ_MAX_LENGTH=3432
 hidden_size=1024
 intermediate_size=4096
 num_attention_heads=8
@@ -45,7 +45,7 @@ seq_subword="step_1_all_sequences_corpus_subword_vocab_30000.txt"
 
 ## for embedding channel
 embedding_input_size=2560
-matrix_max_length=3432
+matrix_max_length=3072
 ### pooling type: none, max, value_attention
 MATRIX_POOLING_TYPE="value_attention"
 ### embedding llm
