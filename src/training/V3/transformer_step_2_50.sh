@@ -76,7 +76,7 @@ buffer_size=10240
 ## tokenizer dir
 tokenizer_dir=extra_p_2_class_v3_kinases_only
 ## positive weight
-pos_weight=4.0
+pos_weight=1.0
 
 # model building time
 time_str=$(date "+%Y%m%d%H%M%S")
