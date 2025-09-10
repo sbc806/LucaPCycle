@@ -32,7 +32,7 @@ loss_type="bce"
 
 
 ## for sequence channel
-SEQ_MAX_LENGTH=3072
+SEQ_MAX_LENGTH=3432
 hidden_size=1024
 intermediate_size=4096
 num_attention_heads=8
@@ -74,9 +74,9 @@ learning_rate=2e-4
 ## data loading buffer size
 buffer_size=10240
 ## tokenizer dir
-tokenizer_dir="step_1"
+tokenizer_dir="extra_p_2_class_v3"
 ## positive weight
-pos_weight=None
+pos_weight=0.4
 
 # model building time
 time_str=$(date "+%Y%m%d%H%M%S")
@@ -147,7 +147,7 @@ python run_seq_only.py \
   --classifier_activate_func gelu \
   --warmup_steps $warmup_steps \
   --beta1 0.9 \
-  --beta2 0.98 \
+  --beta2 0.99 \
   --weight_decay 0.01 \
   --save_steps $save_steps \
   --max_steps $max_steps \
