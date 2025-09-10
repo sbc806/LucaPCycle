@@ -3,9 +3,9 @@
 #SBATCH --gpus-per-node=a100:1
 #SBATCH --mem=64G
 #SBATCH --time=7-0
-#SBATCH --job-name=transformer-step-1
-#SBATCH --output=transformer_step_1_%j.out
-#SBATCH --err=transformer_step_1_%j.err
+#SBATCH --job-name=transformer-step-1-max-length
+#SBATCH --output=transformer_step_1_max_length%j.out
+#SBATCH --err=transformer_step_1_max_length_%j.err
 
 
 module load python/3.11
@@ -18,8 +18,8 @@ source TEST/bin/activate
 
 
 cd ../sbc806/LucaPCycle/src/training/V3
-cat transformer_step_1.sh > /home/schen123/projects/def-guanuofa/schen123/kinases/bash_scripts/step_1/transformer/transformer_step_1_$SLURM_JOB_ID.txt
-./transformer_step_1.sh
+cat transformer_step_1_max_length.sh > /home/schen123/projects/def-guanuofa/schen123/kinases/bash_scripts/step_1/transformer/transformer_step_1_max_length_$SLURM_JOB_ID.txt
+./transformer_step_1_max_length.sh
 
 
 deactivate
