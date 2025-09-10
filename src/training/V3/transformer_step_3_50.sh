@@ -30,7 +30,7 @@ BEST_METRIC_TYPE="f1"
 loss_type="cce"
 
 ## for sequence channel
-SEQ_MAX_LENGTH=3072
+SEQ_MAX_LENGTH=3432
 hidden_size=1024
 intermediate_size=4096
 num_attention_heads=8
@@ -38,8 +38,8 @@ num_hidden_layers=4
 ### pooling type: none, max, mean, value_attention
 SEQ_POOLING_TYPE="value_attention"
 # word-level
-codes_file="step_3_all_sequences_corpus_codes_30000.txt"
-seq_subword="step_3_all_sequences_corpus_subword_vocab_30000.txt"
+codes_file="step_3_all_sequences_corpus_codes_20000_50.txt"
+seq_subword="step_3_all_sequences_corpus_subword_vocab_20000_50.txt"
 
 ## for embedding channel
 embedding_input_size=2560
@@ -72,7 +72,7 @@ learning_rate=2e-4
 ## data loading buffer size
 buffer_size=4096
 ## tokenizer dir
-tokenizer_dir=step_3
+tokenizer_dir=extra_p_133_class_v3
 ## positive weight
 weight=13,212,7,8,21,31,3,10,4,27,28,3,363,589,6,2,20,1,4,37,32,179,17,30,14,110,1.2,4,12,11,64
 weight=1
@@ -147,7 +147,7 @@ python run_seq_only.py \
   --classifier_activate_func gelu \
   --warmup_steps $warmup_steps \
   --beta1 0.9 \
-  --beta2 0.98 \
+  --beta2 0.99 \
   --weight_decay 0.01 \
   --save_steps $save_steps \
   --max_steps $max_steps \
