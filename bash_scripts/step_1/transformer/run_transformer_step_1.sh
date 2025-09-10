@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --account=def-guanuofa
 #SBATCH --gpus-per-node=a100:1
-#SBATCH --mem=64G
+#SBATCH --mem=32G
 #SBATCH --time=7-0
 #SBATCH --job-name=transformer-step-1
 #SBATCH --output=transformer_step_1_%j.out
