@@ -45,7 +45,7 @@ seq_subword="step_1_all_sequences_corpus_subword_vocab_30000.txt"
 
 ## for embedding channel
 embedding_input_size=2560
-matrix_max_length=3072
+matrix_max_length=3432
 ### pooling type: none, max, value_attention
 MATRIX_POOLING_TYPE="value_attention"
 ### embedding llm
@@ -147,7 +147,7 @@ python run_seq_only.py \
   --classifier_activate_func gelu \
   --warmup_steps $warmup_steps \
   --beta1 0.9 \
-  --beta2 0.98 \
+  --beta2 0.99 \
   --weight_decay 0.01 \
   --save_steps $save_steps \
   --max_steps $max_steps \
