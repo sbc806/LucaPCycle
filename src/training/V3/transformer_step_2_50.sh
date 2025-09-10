@@ -32,7 +32,7 @@ loss_type="bce"
 
 
 ## for sequence channel
-SEQ_MAX_LENGTH=3072
+SEQ_MAX_LENGTH=3432
 hidden_size=1024
 intermediate_size=4096
 num_attention_heads=8
@@ -40,8 +40,8 @@ num_hidden_layers=4
 ### pooling type: none, max, mean, value_attention
 SEQ_POOLING_TYPE="value_attention"
 # word-level
-codes_file="step_2_all_sequences_corpus_codes_30000.txt"
-seq_subword="step_2_all_sequences_corpus_subword_vocab_30000.txt"
+codes_file="step_2_all_sequences_corpus_codes_20000_50.txt"
+seq_subword="step_2_all_sequences_corpus_subword_vocab_20000_50.txt"
 
 ## for embedding channel
 embedding_input_size=2560
@@ -74,7 +74,7 @@ learning_rate=2e-4
 ## data loading buffer size
 buffer_size=10240
 ## tokenizer dir
-tokenizer_dir=step_2
+tokenizer_dir=extra_p_2_class_v3_kinases_only
 ## positive weight
 pos_weight=4.0
 
@@ -98,7 +98,7 @@ python run_seq_only.py \
   --seq_subword \
   --codes_file ../subword/$tokenizer_dir/$codes_file \
   --label_filepath ../kinases_dataset/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/label.txt  \
-  --output_dir ../models/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/$MODEL_TYPE/$INPUT_TYPE/$time_str \
+  --output_dir ../models_50/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/$MODEL_TYPE/$INPUT_TYPE/$time_str \
   --log_dir ../logs/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/$MODEL_TYPE/$INPUT_TYPE/$time_str \
   --tb_log_dir ../tb-logs/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/$MODEL_TYPE/$INPUT_TYPE/$time_str \
   --config_path ../config/$MODEL_TYPE/$CONFIG_NAME \
@@ -148,7 +148,7 @@ python run_seq_only.py \
   --classifier_activate_func gelu \
   --warmup_steps $warmup_steps \
   --beta1 0.9 \
-  --beta2 0.98 \
+  --beta2 0.99 \
   --weight_decay 0.01 \
   --save_steps $save_steps \
   --max_steps $max_steps \
