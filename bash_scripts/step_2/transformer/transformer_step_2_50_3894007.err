@@ -1,0 +1,88 @@
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/scratch/schen123/kinases/virtual_environments/TEST/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/scratch/schen123/kinases/sbc806/RumHKNet/src/common/metrics.py:652: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
