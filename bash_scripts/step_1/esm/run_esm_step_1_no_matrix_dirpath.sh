@@ -4,8 +4,8 @@
 #SBATCH --mem=190G
 #SBATCH --time=7-0
 #SBATCH --job-name=esm-step-1-no-matrix-dirpath
-#SBATCH --output=esm_step_1_no_matrix_dirpath_%j.out
-#SBATCH --err=esm_step_1_no_matrix_dirpath_%j.err
+#SBATCH --output=output/esm_step_1_no_matrix_dirpath_%j.out
+#SBATCH --err=output/esm_step_1_no_matrix_dirpath_%j.err
 
 
 module load python/3.11
@@ -18,7 +18,7 @@ source TEST/bin/activate
 
 
 cd ../sbc806/RumHKNet/src/training/V3
-cat esm_step_1_no_matrix_dirpath.sh > /home/schen123/scratch/kinases/bash_scripts/step_1/esm/esm_step_1_no_matrix_dirpath_$SLURM_JOB_ID.txt
+cat esm_step_1_no_matrix_dirpath.sh > /home/schen123/scratch/kinases/bash_scripts/step_1/esm/output/esm_step_1_no_matrix_dirpath_$SLURM_JOB_ID.txt
 ./esm_step_1_no_matrix_dirpath.sh
 
 
