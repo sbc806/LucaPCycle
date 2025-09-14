@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --account=def-guanuofa
 #SBATCH --gpus-per-node=h100:1
-#SBATCH --mem=200G
+#SBATCH --mem=190G
 #SBATCH --time=7-0
 #SBATCH --job-name=esm-step-1-no-matrix-dirpath
 #SBATCH --output=esm_step_1_no_matrix_dirpath_%j.out
