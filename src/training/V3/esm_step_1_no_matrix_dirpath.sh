@@ -45,7 +45,7 @@ seq_subword="step_1_all_sequences_corpus_subword_vocab_30000.txt"
 
 ## for embedding channel
 embedding_input_size=2560
-matrix_max_length=3072
+matrix_max_length=3432
 ### pooling type: none, max, value_attention
 MATRIX_POOLING_TYPE="value_attention"
 ### embedding llm
@@ -76,7 +76,7 @@ buffer_size=10240
 ## tokenizer dir
 tokenizer_dir=step_1
 ## positive weight
-pos_weight=4.0
+pos_weight=0.4
 
 # model building time
 time_str=$(date "+%Y%m%d%H%M%S")
