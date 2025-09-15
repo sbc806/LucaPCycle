@@ -21,3 +21,4 @@ tb-logs/
 src/training/V3/code_copies/
 src/llm/esm/code_copies/
 models_small_weight/
+models*/
