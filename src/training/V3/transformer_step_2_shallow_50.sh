@@ -5,7 +5,7 @@ export CUDA_VISIBLE_DEVICES=0
 seed=1211
 
 # for dataset
-DATASET_NAME="extra_p_2_class_v3"
+DATASET_NAME="extra_p_2_class_v3_kinases_only"
 DATASET_TYPE="protein"
 # for task
 TASK_TYPE="binary_class"
@@ -40,8 +40,8 @@ num_hidden_layers=2
 ### pooling type: none, max, mean, value_attention
 SEQ_POOLING_TYPE="value_attention"
 # word-level
-codes_file="step_1_all_sequences_corpus_codes_30000.txt"
-seq_subword="step_1_all_sequences_corpus_subword_vocab_30000.txt"
+codes_file="step_2_all_sequences_corpus_codes_20000_50.txt"
+seq_subword="step_2_all_sequences_corpus_subword_vocab_20000_50.txt"
 
 ## for embedding channel
 embedding_input_size=2560
@@ -74,9 +74,9 @@ learning_rate=2e-4
 ## data loading buffer size
 buffer_size=10240
 ## tokenizer dir
-tokenizer_dir="step_1"
+tokenizer_dir="extra_p_2_class_v3_kinases_only"
 ## positive weight
-pos_weight=0.4
+pos_weight=1.0
 
 # model building time
 time_str=$(date "+%Y%m%d%H%M%S")
@@ -98,7 +98,7 @@ python run_seq_only.py \
   --seq_subword \
   --codes_file ../subword/$tokenizer_dir/$codes_file \
   --label_filepath ../kinases_dataset/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/label.txt  \
-  --output_dir ../models_shallow/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/$MODEL_TYPE/$INPUT_TYPE/$time_str \
+  --output_dir ../models/step_2/shallow_50/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/$MODEL_TYPE/$INPUT_TYPE/$time_str \
   --log_dir ../logs/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/$MODEL_TYPE/$INPUT_TYPE/$time_str \
   --tb_log_dir ../tb-logs/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/$MODEL_TYPE/$INPUT_TYPE/$time_str \
   --config_path ../config/$MODEL_TYPE/$CONFIG_NAME \

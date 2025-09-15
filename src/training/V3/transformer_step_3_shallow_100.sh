@@ -30,11 +30,11 @@ BEST_METRIC_TYPE="f1"
 loss_type="cce"
 
 ## for sequence channel
-SEQ_MAX_LENGTH=3072
+SEQ_MAX_LENGTH=3432
 hidden_size=1024
 intermediate_size=4096
-num_attention_heads=8
-num_hidden_layers=4
+num_attention_heads=4
+num_hidden_layers=2
 ### pooling type: none, max, mean, value_attention
 SEQ_POOLING_TYPE="value_attention"
 # word-level
@@ -99,7 +99,7 @@ python run_seq_only.py \
   --seq_subword \
   --codes_file ../subword/$tokenizer_dir/$codes_file \
   --label_filepath ../kinases_dataset/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/label.txt  \
-  --output_dir ../models/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/$MODEL_TYPE/$INPUT_TYPE/$time_str \
+  --output_dir ../models/step_3/shallow_100/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/$MODEL_TYPE/$INPUT_TYPE/$time_str \
   --log_dir ../logs/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/$MODEL_TYPE/$INPUT_TYPE/$time_str \
   --tb_log_dir ../tb-logs/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/$MODEL_TYPE/$INPUT_TYPE/$time_str \
   --config_path ../config/$MODEL_TYPE/$CONFIG_NAME \
@@ -147,7 +147,7 @@ python run_seq_only.py \
   --classifier_activate_func gelu \
   --warmup_steps $warmup_steps \
   --beta1 0.9 \
-  --beta2 0.98 \
+  --beta2 0.99 \
   --weight_decay 0.01 \
   --save_steps $save_steps \
   --max_steps $max_steps \
