@@ -5,7 +5,7 @@ export CUDA_VISIBLE_DEVICES=0
 seed=1211
 
 # for dataset
-DATASET_NAME="extra_p_2_class_v3"
+DATASET_NAME="step_1"
 DATASET_TYPE="protein"
 # for task
 TASK_TYPE="binary_class"
