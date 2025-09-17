@@ -18,7 +18,7 @@ source TEST/bin/activate
 
 
 cd ../sbc806/LucaPCycle/src/training/V3
-cat transformer_step_1_shallow_100_long.sh > /home/schen123/projects/def-guanuofa/schen123/kinases/bash_scripts/step_1/transformer/output/transformer_step_1_shallow_100_long_$SLURM_JOB_ID.txt
+cat transformer_step_1_shallow_100_long.sh > /home/schen123/projects/def-guanuofa/schen123/kinases/sbc806/LucaPCycle/bash_scripts/step_1/transformer/output/transformer_step_1_shallow_100_long_$SLURM_JOB_ID.txt
 ./transformer_step_1_shallow_100_long.sh
 
 
