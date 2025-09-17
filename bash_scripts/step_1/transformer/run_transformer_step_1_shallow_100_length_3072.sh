@@ -3,9 +3,9 @@
 #SBATCH --gpus-per-node=a100:1
 #SBATCH --mem=32G
 #SBATCH --time=7-0
-#SBATCH --job-name=transformer-step-1-shallow-100-long
-#SBATCH --output=output/transformer_step_1_shallow_100_long_%j.out
-#SBATCH --err=output/transformer_step_1_shallow_100_long_%j.err
+#SBATCH --job-name=transformer-step-1-shallow-100-length-3072
+#SBATCH --output=output/transformer_step_1_shallow_100_length_3072_%j.out
+#SBATCH --err=output/transformer_step_1_shallow_100_length_3072_%j.err
 
 
 module load python/3.11
@@ -18,8 +18,8 @@ source TEST/bin/activate
 
 
 cd ../sbc806/LucaPCycle/src/training/V3
-cat transformer_step_1_shallow_100_long.sh > /home/schen123/projects/def-guanuofa/schen123/kinases/bash_scripts/step_1/transformer/output/transformer_step_1_shallow_100_long_$SLURM_JOB_ID.txt
-./transformer_step_1_shallow_100_long.sh
+cat transformer_step_1_shallow_100_length_3072.sh > /home/schen123/projects/def-guanuofa/schen123/kinases/bash_scripts/step_1/transformer/output/transformer_step_1_shallow_100_length_3072_$SLURM_JOB_ID.txt
+./transformer_step_1_shallow_100_length_3072.sh
 
 
 deactivate
