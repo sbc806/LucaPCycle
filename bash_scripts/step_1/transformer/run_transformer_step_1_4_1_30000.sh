@@ -2,10 +2,10 @@
 #SBATCH --account=def-guanuofa
 #SBATCH --gpus-per-node=a100:1
 #SBATCH --mem=32G
-#SBATCH --time=7-0
-#SBATCH --job-name=transformer-step-1-shallow-100
-#SBATCH --output=output/transformer_step_1_shallow_100_%j.out
-#SBATCH --err=output/transformer_step_1_shallow_100_%j.err
+#SBATCH --time=4-0
+#SBATCH --job-name=transformer-step-1-4-1-30000
+#SBATCH --output=output/transformer_step_1_4_1_30000_%j.out
+#SBATCH --err=output/transformer_step_1_4_1_30000_%j.err
 
 
 module load python/3.11
@@ -18,8 +18,8 @@ source TEST/bin/activate
 
 
 cd ../sbc806/LucaPCycle/src/training/V3
-cat transformer_step_1_shallow_100.sh > /home/schen123/projects/def-guanuofa/schen123/kinases/bash_scripts/step_1/transformer/output/transformer_step_1_shallow_100_$SLURM_JOB_ID.txt
-./transformer_step_1_shallow_100.sh
+cat transformer_step_1_4_1_30000.sh > /home/schen123/projects/def-guanuofa/schen123/kinases/bash_scripts/step_1/transformer/output/transformer_step_1_4_1_30000_$SLURM_JOB_ID.txt
+./transformer_step_1_4_1_30000.sh
 
 
 deactivate
