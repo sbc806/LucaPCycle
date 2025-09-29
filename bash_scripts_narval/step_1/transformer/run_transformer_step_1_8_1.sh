@@ -18,8 +18,8 @@ source TEST/bin/activate
 
 
 cd ../sbc806/RumHKNet/src/training/V3
-cat transformer_step_1.sh > /home/schen123/projects/def-guanuofa/schen123/kinases/sbc806/RumHKNet/bash_scripts_narval/step_1/transformer/output/transformer_step_1_8_1_$SLURM_JOB_ID.txt
-./transformer_step_1.sh
+cat transformer_step_1_8_1.sh > /home/schen123/projects/def-guanuofa/schen123/kinases/sbc806/RumHKNet/bash_scripts_narval/step_1/transformer/output/transformer_step_1_8_1_$SLURM_JOB_ID.txt
+./transformer_step_1_8_1.sh
 
 
 deactivate
