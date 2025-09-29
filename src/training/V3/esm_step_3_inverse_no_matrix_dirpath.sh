@@ -43,7 +43,7 @@ seq_subword="step_3_all_sequences_corpus_subword_vocab_30000.txt"
 
 ## for embedding channel
 embedding_input_size=2560
-matrix_max_length=3072
+matrix_max_length=3432
 ### pooling type: none, max, value_attention
 MATRIX_POOLING_TYPE="value_attention"
 ### embedding llm
