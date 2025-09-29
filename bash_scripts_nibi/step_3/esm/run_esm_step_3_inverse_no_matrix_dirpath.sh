@@ -1,24 +1,24 @@
 #!/bin/bash
-#SBATCH --account=def-guanuofa
+#SBATCH --account=rrg-guanuofa
 #SBATCH --gpus=nvidia_h100_80gb_hbm3_3g.40gb:1
 #SBATCH --mem=128G
 #SBATCH --time=7-0
 #SBATCH --job-name=esm-step-3-inverse-no-matrix-dirpath
-#SBATCH --output=esm_step_3_inverse_no_matrix_dirpath%j.out
+#SBATCH --output=esm_step_3_inverse_no_matrix_dirpath_%j.out
 #SBATCH --err=esm_step_3_inverse_no_matrix_dirpath_%j.err
 
 
 module load python/3.11
 module load scipy-stack
-module load gcc arrow/19.0.1
+module load gcc arrow/21.0.0
 
 
-cd /home/schen123/scratch/kinases/virtual_environments
+cd /home/schen123/projects/rrg-guanuofa/kinases/virtual_environments
 source TEST/bin/activate
 
 
 cd ../sbc806/RumHKNet/src/training/V3
-cat esm_step_3_inverse_no_matrix_dirpath.sh > /home/schen123/scratch/kinases/bash_scripts_fir/step_3/esm/esm_step_3_inverse_no_matrix_dirpath_$SLURM_JOB_ID.txt
+cat esm_step_3_inverse_no_matrix_dirpath.sh > /home/schen123/projects/rrg-guanuofa/kinases/sbc806/RumHKNet/bash_scripts_nibi/step_3/esm/output/esm_step_3_inverse_no_matrix_dirpath_$SLURM_JOB_ID.txt
 ./esm_step_3_inverse_no_matrix_dirpath.sh
 
 
