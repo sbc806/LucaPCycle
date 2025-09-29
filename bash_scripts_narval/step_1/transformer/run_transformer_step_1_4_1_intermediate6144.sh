@@ -17,8 +17,8 @@ cd /home/schen123/links/projects/def-guanuofa/schen123/kinases/virtual_environme
 source TEST/bin/activate
 
 
-cd ../sbc806/RumHKNet/src/training/V3
-cat transformer_step_1_4_1_intermediate6144.sh > /home/schen123/links/projects/def-guanuofa/schen123/kinases/sbc806/bash_scripts_narval/step_1/transformer/output/transformer_step_1_4_1_intermediate6144_$SLURM_JOB_ID.txt
+cd ../sbc806_1/RumHKNet/src/training/V3
+cat transformer_step_1_4_1_intermediate6144.sh > /home/schen123/links/projects/def-guanuofa/schen123/kinases/sbc806_1/bash_scripts_narval/step_1/transformer/output/transformer_step_1_4_1_intermediate6144_$SLURM_JOB_ID.txt
 ./transformer_step_1_4_1_intermediate6144.sh
 
 
