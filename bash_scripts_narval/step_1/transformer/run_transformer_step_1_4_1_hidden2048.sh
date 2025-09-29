@@ -2,7 +2,7 @@
 #SBATCH --account=def-guanuofa
 #SBATCH --gpus-per-node=h100_3g.40gb:1
 #SBATCH --mem=32G
-#SBATCH --time=7-0
+#SBATCH --time=4-0
 #SBATCH --job-name=transformer-step-1-4-1-hidden2048
 #SBATCH --output=output/transformer_step_1_4_1_hidden2048_%j.out
 #SBATCH --err=output/transformer_step_1_4_1_hidden2048_%j.err
