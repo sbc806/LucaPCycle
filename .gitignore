@@ -22,9 +22,9 @@ src/training/V3/code_copies/
 src/llm/esm/code_copies/
 models_small_weight/
 models*/
-bash_scripts_nibi/step_1/esm/output/
-bash_scripts_nibi/step_1/transformer/output/
-bash_scripts_nibi/step_2/esm/output/
-bash_scripts_nibi/step_2/transformer/output/
-bash_scripts_nibi/step_3/esm/output/
-bash_scripts_nibi/step_3/transformer/output/
+bash_scripts*/step_1/esm/output/
+bash_scripts*/step_1/transformer/output/
+bash_scripts*/step_2/esm/output/
+bash_scripts*/step_2/transformer/output/
+bash_scripts*/step_3/esm/output/
+bash_scripts*/step_3/transformer/output/
