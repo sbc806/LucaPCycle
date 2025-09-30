@@ -575,7 +575,7 @@ def get_model(args):
         model_config.pos_weight = args.pos_weight
     if args.weight:
         if "/" in args.weight.split(",")[0]:
-            model_config.weight = [float(v.split("/")[0]) / float(v.split("/")]1]) for v in args.weight.split(",")]
+            model_config.weight = [float(v.split("/")[0]) / float(v.split("/")[1]) for v in args.weight.split(",")]
         else:
             model_config.weight = [float(v) for v in args.weight.split(",")]
         args.weight = model_config.weight
