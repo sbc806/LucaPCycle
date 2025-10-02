@@ -160,7 +160,7 @@ python run.py \
   --no_token_type_embeddings \
   --no_position_embeddings \
   --use_rotary_position_embeddings \
-  --divide_classification_weights 5
+  --divide_classification_weight 5
 
 
 
