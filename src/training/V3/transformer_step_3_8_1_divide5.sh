@@ -83,7 +83,7 @@ weight=1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,4,5,5,6
 time_str=$(date "+%Y%m%d%H%M%S")
 
 cd ../..
-python run_seq_only.py \
+python run.py \
   --train_data_dir ../kinases_dataset/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/train/ \
   --dev_data_dir ../kinases_dataset/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/dev/ \
   --test_data_dir ../kinases_dataset/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/test/ \
@@ -159,7 +159,8 @@ python run_seq_only.py \
   --matrix_add_special_token \
   --no_token_type_embeddings \
   --no_position_embeddings \
-  --use_rotary_position_embeddings
+  --use_rotary_position_embeddings \
+  --divide_classification_weight 5
 
 
 
