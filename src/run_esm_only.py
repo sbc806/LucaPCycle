@@ -578,6 +578,9 @@ def get_model(args):
         model_config.pos_weight = args.pos_weight
     if args.weight:
         model_config.weight = [float(v) for v in args.weight.split(",")]
+        if args.divide_classification_weight != 1:
+            print(f"Dividing model_config.weight by: {args.divide_classification_weight}")
+            model_config.weight = [v / args.divide_classification_weight for v in model_config.weight]
         args.weight = model_config.weight
     if args.loss_reduction:
         if args.loss_reduction in ["meanmean", "meansum"] \
