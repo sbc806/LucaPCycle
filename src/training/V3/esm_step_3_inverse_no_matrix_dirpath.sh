@@ -83,7 +83,7 @@ weight=272,270,243,205,156,151,151,149,116,112,106,100,92,79,74,72,72,72,71,69,5
 time_str=$(date "+%Y%m%d%H%M%S")
 
 cd ../..
-python run.py \
+python -u run.py \
   --train_data_dir ../kinases_dataset/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/train/ \
   --dev_data_dir ../kinases_dataset/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/dev/ \
   --test_data_dir ../kinases_dataset/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/test/ \
