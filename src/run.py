@@ -315,6 +315,8 @@ def get_args():
     # RoPE
     parser.add_argument('--use_rotary_position_embeddings', action='store_true',
                         help='whether no token type embeddings')
+
+    parser.add_argument('--divide_classification_weight', default=1, type=int, help='number to divide classification weights by')
     args = parser.parse_args()
     return args
 
@@ -575,6 +577,8 @@ def get_model(args):
         model_config.pos_weight = args.pos_weight
     if args.weight:
         model_config.weight = [float(v) for v in args.weight.split(",")]
+        if args.divide_classification_wiehgt != 1:
+            model_config.weight = [v / args.divide_classification_weight for v in model_config.weight]
         args.weight = model_config.weight
     if args.loss_reduction:
         if args.loss_reduction in ["meanmean", "meansum"] \
