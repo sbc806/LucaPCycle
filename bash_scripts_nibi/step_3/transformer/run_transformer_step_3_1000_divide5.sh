@@ -4,8 +4,8 @@
 #SBATCH --mem=64G
 #SBATCH --time=4-0
 #SBATCH --job-name=transformer-step-3-1000_divide5
-#SBATCH --output=transformer_step_3_1000_divide5_%j.out
-#SBATCH --err=transformer_step_3_1000_divide5_%j.err
+#SBATCH --output=output/transformer_step_3_1000_divide5_%j.out
+#SBATCH --err=output/transformer_step_3_1000_divide5_%j.err
 
 
 module load python/3.11
