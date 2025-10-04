@@ -31,7 +31,7 @@ loss_type="cce"
 
 ## for sequence channel
 SEQ_MAX_LENGTH=3432
-hidden_size=1024
+hidden_size=256
 intermediate_size=4096
 num_attention_heads=8
 num_hidden_layers=1
