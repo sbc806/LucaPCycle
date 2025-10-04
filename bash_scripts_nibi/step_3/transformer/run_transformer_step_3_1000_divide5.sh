@@ -18,7 +18,7 @@ source TEST/bin/activate
 
 
 cd ../sbc806/RumHKNet/src/training/V3
-cat transformer_step_3_1000_divide5.sh > /home/schen123/projects/rrg-guanuofa/schen123/kinases/sbc806/RumHKNetbash_scripts_nibi/step_3/transformer/output/transformer_step_3_1000_divide5_$SLURM_JOB_ID.txt
+cat transformer_step_3_1000_divide5.sh > /home/schen123/projects/rrg-guanuofa/schen123/kinases/sbc806/RumHKNet/bash_scripts_nibi/step_3/transformer/output/transformer_step_3_1000_divide5_$SLURM_JOB_ID.txt
 ./transformer_step_3_1000_divide5.sh
 
 
