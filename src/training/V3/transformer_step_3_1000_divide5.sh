@@ -14,7 +14,7 @@ LABEL_TYPE="extra_p_133_class"
 # for input
 ## seq, vector, matrix, seq_matrix, seq_vector
 ### sequence + embedding channels
-INPUT_TYPE="matrix"
+INPUT_TYPE="seq"
 ## single or pair
 INPUT_MODE="single"
 TRUNC_TYPE="right"
@@ -30,11 +30,11 @@ BEST_METRIC_TYPE="f1"
 loss_type="cce"
 
 ## for sequence channel
-SEQ_MAX_LENGTH=3072
+SEQ_MAX_LENGTH=3432
 hidden_size=1024
 intermediate_size=4096
 num_attention_heads=8
-num_hidden_layers=4
+num_hidden_layers=1
 ### pooling type: none, max, mean, value_attention
 SEQ_POOLING_TYPE="value_attention"
 # word-level
