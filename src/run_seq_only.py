@@ -315,6 +315,8 @@ def get_args():
     # RoPE
     parser.add_argument('--use_rotary_position_embeddings', action='store_true',
                         help='whether no token type embeddings')
+
+    parser.add_argument('--divide_classification_weight', default=-1, type=int, help='')
     args = parser.parse_args()
     return args
 
