@@ -316,7 +316,7 @@ def get_args():
     parser.add_argument('--use_rotary_position_embeddings', action='store_true',
                         help='whether no token type embeddings')
 
-    parser.add_argument('--divide_classification_weight', default=-1, type=int, help='')
+    parser.add_argument('--divide_classification_weight', default=1, type=int, help='number to divide classification weights by')
     args = parser.parse_args()
     return args
 
@@ -576,10 +576,15 @@ def get_model(args):
             args.pos_weight = float(args.pos_weight)
         model_config.pos_weight = args.pos_weight
     if args.weight:
-        if "/" in args.weight.split(",")[0]:
-            model_config.weight = [float(v.split("/")[0]) / float(v.split("/")[1]) for v in args.weight.split(",")]
+        # if "/" in args.weight.split(",")[0]:
+            # model_config.weight = [float(v.split("/")[0]) / float(v.split("/")[1]) for v in args.weight.split(",")]
+        # else:
+        model_config.weight = [float(v) for v in args.weight.split(",")]
+        if args.divide_classification_weight != 1:
+            print(f"Dividing args.weight by {args.divide_classification_weight}")
+            model_config.weight = [v / args.divide_classification_weight for v in model_config.weight]
         else:
-            model_config.weight = [float(v) for v in args.weight.split(",")]
+            print("Using args.weight without dividing")
         args.weight = model_config.weight
     if args.loss_reduction:
         if args.loss_reduction in ["meanmean", "meansum"] \
