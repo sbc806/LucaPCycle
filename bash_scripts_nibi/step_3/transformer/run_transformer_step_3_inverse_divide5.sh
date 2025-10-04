@@ -13,13 +13,13 @@ module load scipy-stack
 module load gcc arrow/21.0.0
 
 
-cd /home/schen123/projects/def-guanuofa/schen123/kinases/virtual_environments
+cd /home/schen123/projects/rrg-guanuofa/schen123/kinases/virtual_environments
 source TEST/bin/activate
 
 
-cd ../sbc806/LucaPCycle/src/training/V3
-cat transformer_step_3.sh > /home/schen123/projects/def-guanuofa/schen123/kinases/bash_scripts/step_3/transformer/transformer_step_3_$SLURM_JOB_ID.txt
-./transformer_step_3.sh
+cd ../sbc806/RumHKNet/src/training/V3
+cat transformer_step_3_inverse_divide5.sh > /home/schen123/projects/rrg-guanuofa/schen123/kinases/bash_scripts/step_3/transformer/transformer_step_3_$SLURM_JOB_ID.txt
+./transformer_step_3_inverse_divide5.sh
 
 
 deactivate
