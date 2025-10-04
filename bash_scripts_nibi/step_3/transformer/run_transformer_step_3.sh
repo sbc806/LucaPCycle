@@ -1,8 +1,8 @@
 #!/bin/bash
-#SBATCH --account=def-guanuofa
-#SBATCH --gpus-per-node=a100:1
+#SBATCH --account=rrg-guanuofa
+#SBATCH --gpus-per-node=h100:1
 #SBATCH --mem=64G
-#SBATCH --time=7-0
+#SBATCH --time=4-0
 #SBATCH --job-name=transformer-step-3
 #SBATCH --output=transformer_step_3_%j.out
 #SBATCH --err=transformer_step_3_%j.err
