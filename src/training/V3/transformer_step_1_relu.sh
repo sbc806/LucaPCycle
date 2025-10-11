@@ -33,8 +33,8 @@ loss_type="bce"
 
 ## for sequence channel
 SEQ_MAX_LENGTH=3432
-hidden_size=256
-intermediate_size=1024
+hidden_size=512
+intermediate_size=4096
 num_attention_heads=4
 num_hidden_layers=1
 ### pooling type: none, max, mean, value_attention
