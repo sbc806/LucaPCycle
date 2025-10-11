@@ -33,8 +33,8 @@ loss_type="bce"
 
 ## for sequence channel
 SEQ_MAX_LENGTH=3432
-hidden_size=512
-intermediate_size=2048
+hidden_size=256
+intermediate_size=1024
 num_attention_heads=4
 num_hidden_layers=1
 ### pooling type: none, max, mean, value_attention
@@ -57,7 +57,7 @@ llm_step="3B"
 ## max epochs
 num_train_epochs=50
 ## accumulation gradient steps
-gradient_accumulation_steps=32
+gradient_accumulation_steps=8
 # 间隔多少个step在log文件中写入信息（实际上是gradient_accumulation_steps与logging_steps的最小公倍数, 这里是4000）
 logging_steps=4000
 ## checkpoint的间隔step数。-1表示按照epoch粒度保存checkpoint
@@ -68,7 +68,7 @@ warmup_steps=8000
 ## -1自动计算
 max_steps=-1
 ## batch size for one GPU
-batch_size=1
+batch_size=8
 ## 最大学习速率(peak learning rate)
 learning_rate=2e-4
 ## data loading buffer size
@@ -98,7 +98,7 @@ python -u run_seq_only.py \
   --seq_subword \
   --codes_file ../subword/$tokenizer_dir/$codes_file \
   --label_filepath ../kinases_dataset/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/label.txt  \
-  --output_dir ../models_b1_g32/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/$MODEL_TYPE/$INPUT_TYPE/$time_str \
+  --output_dir ../models_4_1_256_1024/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/$MODEL_TYPE/$INPUT_TYPE/$time_str \
   --log_dir ../logs/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/$MODEL_TYPE/$INPUT_TYPE/$time_str \
   --tb_log_dir ../tb-logs/$DATASET_NAME/$DATASET_TYPE/$TASK_TYPE/$MODEL_TYPE/$INPUT_TYPE/$time_str \
   --config_path ../config/$MODEL_TYPE/$CONFIG_NAME \
