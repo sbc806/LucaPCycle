@@ -142,9 +142,9 @@ python -u run_seq_only.py \
   --seq_fc_size $fc_size \
   --matrix_fc_size $fc_size \
   --vector_fc_size $fc_size \
-  --emb_activate_func gelu \
-  --fc_activate_func gelu \
-  --classifier_activate_func gelu \
+  --emb_activate_func relu \
+  --fc_activate_func relu \
+  --classifier_activate_func relu \
   --warmup_steps $warmup_steps \
   --beta1 0.9 \
   --beta2 0.99 \
