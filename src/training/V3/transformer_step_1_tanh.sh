@@ -33,8 +33,8 @@ loss_type="bce"
 
 ## for sequence channel
 SEQ_MAX_LENGTH=3432
-hidden_size=256
-intermediate_size=1024
+hidden_size=512
+intermediate_size=4096
 num_attention_heads=4
 num_hidden_layers=1
 ### pooling type: none, max, mean, value_attention
@@ -142,9 +142,9 @@ python -u run_seq_only.py \
   --seq_fc_size $fc_size \
   --matrix_fc_size $fc_size \
   --vector_fc_size $fc_size \
-  --emb_activate_func gelu \
-  --fc_activate_func gelu \
-  --classifier_activate_func gelu \
+  --emb_activate_func tanh \
+  --fc_activate_func tanh \
+  --classifier_activate_func tanh \
   --warmup_steps $warmup_steps \
   --beta1 0.9 \
   --beta2 0.99 \
