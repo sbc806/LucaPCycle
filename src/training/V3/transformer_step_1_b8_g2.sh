@@ -34,7 +34,7 @@ loss_type="bce"
 ## for sequence channel
 SEQ_MAX_LENGTH=3432
 hidden_size=256
-intermediate_size=1024
+intermediate_size=4096
 num_attention_heads=4
 num_hidden_layers=1
 ### pooling type: none, max, mean, value_attention
@@ -57,7 +57,7 @@ llm_step="3B"
 ## max epochs
 num_train_epochs=50
 ## accumulation gradient steps
-gradient_accumulation_steps=8
+gradient_accumulation_steps=2
 # 间隔多少个step在log文件中写入信息（实际上是gradient_accumulation_steps与logging_steps的最小公倍数, 这里是4000）
 logging_steps=4000
 ## checkpoint的间隔step数。-1表示按照epoch粒度保存checkpoint
