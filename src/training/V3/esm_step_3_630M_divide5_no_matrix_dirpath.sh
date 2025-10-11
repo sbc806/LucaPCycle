@@ -42,14 +42,14 @@ codes_file="step_3_all_sequences_corpus_codes_30000.txt"
 seq_subword="step_3_all_sequences_corpus_subword_vocab_30000.txt"
 
 ## for embedding channel
-embedding_input_size=2560
+embedding_input_size=1280
 matrix_max_length=3432
 ### pooling type: none, max, value_attention
 MATRIX_POOLING_TYPE="value_attention"
 ### embedding llm
 llm_version="esm2"
 llm_type="esm"
-llm_step="3B"
+llm_step="630M"
 
 # for training
 ## max epochs
