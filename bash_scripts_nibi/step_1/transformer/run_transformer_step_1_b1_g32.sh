@@ -10,7 +10,7 @@
 
 module load python/3.11
 module load scipy-stack
-module load gcc arrow/19.0.1
+module load gcc arrow/21.0.0
 
 
 cd /home/schen123/projects/rrg-guanuofa/schen123/kinases/virtual_environments
@@ -18,8 +18,8 @@ source TEST/bin/activate
 
 
 cd ../sbc806/RumHKNet/src/training/V3
-cat transformer_step_1_4_1_512_2048.sh > /home/schen123/projects/rrg-guanuofa/schen123/kinases/sbc806/RumHKNet/bash_scripts_nibi/step_1/transformer/output/transformer_step_1_4_1_512_2048_$SLURM_JOB_ID.txt
-./transformer_step_1_4_1_512_2048.sh
+cat transformer_step_1_b1_g32.sh > /home/schen123/projects/rrg-guanuofa/schen123/kinases/sbc806/RumHKNet/bash_scripts_nibi/step_1/transformer/output/transformer_step_1_b1_g2_$SLURM_JOB_ID.txt
+./transformer_step_1_b1_g32.sh
 
 
 deactivate
