@@ -33,8 +33,8 @@ loss_type="bce"
 
 ## for sequence channel
 SEQ_MAX_LENGTH=3432
-hidden_size=256
-intermediate_size=1024
+hidden_size=512
+intermediate_size=4096
 num_attention_heads=4
 num_hidden_layers=1
 ### pooling type: none, max, mean, value_attention
@@ -68,7 +68,7 @@ warmup_steps=8000
 ## -1自动计算
 max_steps=-1
 ## batch size for one GPU
-batch_size=8
+batch_size=16
 ## 最大学习速率(peak learning rate)
 learning_rate=2e-4
 ## data loading buffer size
