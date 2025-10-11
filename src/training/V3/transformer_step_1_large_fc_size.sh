@@ -26,15 +26,15 @@ CONFIG_NAME="lucaprot_config.json"
 FUSION_TYPE="concat"
 dropout_prob=0.1
 fc_size=256
-classifier_size=$fc_size
+classifier_size=$((fc_size + fc_size))
 BEST_METRIC_TYPE="f1"
 loss_type="bce"
 
 
 ## for sequence channel
 SEQ_MAX_LENGTH=3432
-hidden_size=256
-intermediate_size=1024
+hidden_size=512
+intermediate_size=4096
 num_attention_heads=4
 num_hidden_layers=1
 ### pooling type: none, max, mean, value_attention
