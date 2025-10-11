@@ -18,7 +18,7 @@ source TEST/bin/activate
 
 
 cd ../sbc806/RumHKNet/src/training/V3
-cat transformer_step_1_b1_g32.sh > /home/schen123/projects/rrg-guanuofa/schen123/kinases/sbc806/RumHKNet/bash_scripts_nibi/step_1/transformer/output/transformer_step_1_b1_g2_$SLURM_JOB_ID.txt
+cat transformer_step_1_b1_g32.sh > /home/schen123/projects/rrg-guanuofa/schen123/kinases/sbc806/RumHKNet/bash_scripts_nibi/step_1/transformer/output/transformer_step_1_b1_g32_$SLURM_JOB_ID.txt
 ./transformer_step_1_b1_g32.sh
 
 
