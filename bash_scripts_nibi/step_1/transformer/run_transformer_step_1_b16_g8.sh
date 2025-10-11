@@ -3,9 +3,9 @@
 #SBATCH --gpus-per-node=h100:1
 #SBATCH --mem=32G
 #SBATCH --time=4-0
-#SBATCH --job-name=transformer-step-1-4-1-512-2048
-#SBATCH --output=output/transformer_step_1_4_1_512_2048_%j.out
-#SBATCH --err=output/transformer_step_1_4_1_512_2048_%j.err
+#SBATCH --job-name=transformer-step-1-b16-g8
+#SBATCH --output=output/transformer_step_1_b16_g8_%j.out
+#SBATCH --err=output/transformer_step_1_b16_g8_%j.err
 
 
 module load python/3.11
