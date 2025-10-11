@@ -4,8 +4,8 @@
 #SBATCH --mem=32G
 #SBATCH --time=4-0
 #SBATCH --job-name=transformer-step-1-b1-g32
-#SBATCH --output=output/transformer_step_1_4_1_512_2048_%j.out
-#SBATCH --err=output/transformer_step_1_4_1_512_2048_%j.err
+#SBATCH --output=output/transformer_step_1_b1_g32_%j.out
+#SBATCH --err=output/transformer_step_1_b1_g32_%j.err
 
 
 module load python/3.11
